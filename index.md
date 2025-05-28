@@ -15,4 +15,4 @@ This guide provides documentation and detailed usage examples for the Metadata E
 * [External schemas and Controlled Vocabularies](external_schema_vocabulary.md): Offers an overview of using external schemas with METS for different metadata categories, including descriptive and administrative metadata. Readers are referred to external resources for detailed information on each schema endorsed by the METS Editorial Board.  
 * [METS Profiles](mets_profiles.md): Includes introductory material about METS profiles, and refers to the METS website for detailed guidance on how to create profiles, view the list of registered profiles, and access the required sample instance documents.
 
-
+This guide is descriptive rather than normative: the [schema itself](https://github.com/mets/METS-schema/blob/main/v2/mets2.xsd) and the [generated schema reference](https://mets.github.io/METS_v2_Docs/mets2.html) are authoritative for METS as a standard.

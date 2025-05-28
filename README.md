@@ -10,3 +10,5 @@ The published version of this site is available at [https://mets.github.io](http
 * [Complete Example](complete_example.md): provides a complete working example of a non-trivial METS document.
 * [External schema and Controlled Vocabulary](external_schema_vocabulary.md): provides an overview of the use of external schemas with METS for the different categories of metadata that can be partitioned within it including descriptive and administrative metadata. 
 * [METS Profiles](mets_profiles.md): contains introductory material on METS profiles.
+
+This guide is descriptive rather than normative: the [schema itself](https://github.com/mets/METS-schema/blob/main/v2/mets2.xsd) and the [generated schema reference](https://mets.github.io/METS_v2_Docs/mets2.html) are authoritative for METS as a standard.
