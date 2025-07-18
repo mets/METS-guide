@@ -10,39 +10,17 @@ When a file contains other files, such as with container file formats like `.zip
 
 ## Example
 
-The following simplified example is a file section from a
-digital object for an oral history interview which is expressed in three different formats:
+The following simplified example is a Matroska video container file, which contains one FFV1 video stream and one FLAC audio stream.
 
-  - a TEI-encoded transcript
-  - a master audio file in WAV format
-  - a derivative audio file in MP3 format
-
-Within the TEI-encoded transcript is embedded a fragment of the audio file in WAV format which expresses the oral representation of a given section of the transcript. The XML fragment for the mixed content file could be illustrated as follows:
+The MDID attribute in `<file>` element refers to a metadata section which contains metadata about the file itself, where as the `MDID` attributes in the streams refer to the metadata sections, which contain metadata about the video and audio streams. These sections could for example include all the required technical metadata about the file and its streams.
 
 ```xml
 <mets:fileSec>
-  <mets:fileGrp ID="FORMAT1" USE="Transcription">
-    <mets:file ID="FILE001" MIMETYPE="application/xml"
-        SIZE="257537" CREATED="2001-06-10">
-      <mets:FLocat LOCTYPE="URL"
-        LOCREF="http://dlib.nyu.edu/tamwag/beame.xml"/>
-    </mets:file>
-  </mets:fileGrp>
-  <mets:fileGrp ID="FORMAT2" USE="Master Audio">
-    <mets:file ID="FILE002" MIMETYPE="audio/wav" SIZE="64232836"
-        CREATED="2001-05-17" GROUPID="AUDIO1">
-      <mets:FLocat LOCTYPE="URL"
-        LOCREF="http://dlib/nyu.edu/tamwag/beame.wav"/>
-    </mets:file>
-  </mets:fileGrp>
-  <mets:fileGrp ID="MIXEDFORMAT" VERSDATE="2005-4-14"
-      USE="Master Component Playback">
-    <mets:file ID="FILE004_01" MIMETYPE="application/xml" SIZE="2566764"
-        CREATED="2005-4-14">
-      <mets:FLocat LOCTYPE="URL"
-        LOCREF="http://dlib.nyu.edu/tamwag/beame_comp01.xml"/>
-      <mets:stream ID="BEAME_COMP_01" streamType="AUDIO/X-WAV"
-        OWNERID="HIST_DEPT05_BEAME_COMP_O1" MDID="MODS_BEAME_COMP_01"/>
+  <mets:fileGrp>
+    <mets:file MDID="tech-container" ID="id-movie" MIMETYPE="video/x-matroska">
+      <mets:FLocat LOCTYPE="URL" LOCREF="file://movie.mkv" />
+      <mets:stream MDID="tech-video" streamType="video/x-ffv" />
+      <mets:stream MDID="tech-audio" streamType="audio/flac" />
     </mets:file>
   </mets:fileGrp>
 </mets:fileSec>
