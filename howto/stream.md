@@ -17,9 +17,9 @@ The MDID attribute in `<file>` element refers to a metadata section which contai
 ```xml
 <mets:fileSec>
   <mets:fileGrp>
-    <mets:file MDID="tech-container" ID="id-movie" MIMETYPE="video/x-matroska">
+    <mets:file MDID="tech-container" ID="id-movie" MIMETYPE="video/matroska">
       <mets:FLocat LOCTYPE="URL" LOCREF="file://movie.mkv" />
-      <mets:stream MDID="tech-video" streamType="video/x-ffv" />
+      <mets:stream MDID="tech-video" streamType="video/FFV1" />
       <mets:stream MDID="tech-audio" streamType="audio/flac" />
     </mets:file>
   </mets:fileGrp>
