@@ -12,7 +12,7 @@ When a file contains other files, such as with container file formats like `.zip
 
 The following simplified example is a Matroska video container file, which contains one FFV1 video stream and one FLAC audio stream.
 
-The MDID attribute in `<file>` element refers to a metadata section which contains metadata about the file itself, where as the `MDID` attributes in the streams refer to the metadata sections, which contain metadata about the video and audio streams. These sections could for example include all the required technical metadata about the file and its streams.
+The MDID attribute in `<file>` element refers to a metadata section which contains metadata about the file itself, whereas the `MDID` attributes in the `<stream>` elements refer to the metadata sections, which contain metadata about the video and audio streams. These metadata sections could for example include all the required technical metadata about the file and its streams.
 
 ```xml
 <mets:fileSec>
