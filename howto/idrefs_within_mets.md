@@ -76,7 +76,7 @@ In the example below, the ID attribute value “App4ADM1” identifies the first
     PROFILE="http://www.loc.gov/standards/mets/profiles/0000000X.xml">
   <mets:mdSec>
     <mets:md ID="App4ADM1">
-      <mets:mdWrap MDTYPE="NISOIMG">
+      <mets:mdWrap MDTYPE="MIX">
         <mets:xmlData>
           <mix:mix>
             <mix:BasicImageParameters>
