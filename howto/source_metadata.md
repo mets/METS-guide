@@ -4,11 +4,9 @@ parent: METS How-Tos
 ---
 # Describing characteristics of the source material
 
-**Source metadata** is descriptive and administrative metadata about the source format or media of a component of the METS object, such as a digital content file. It is often used for discovery, data administration, or preservation of the digital object. Source metadata can be expressed according to current source description standards (such as PREMIS) or a locally developed XML schema.
+**Source metadata** is descriptive and administrative metadata about the source format or media of a component of the METS object such as a digital content file. It is often used for discovery, data administration or preservation of the digital object. Source metadata can be expressed according to current source description standards (such as PREMIS) or a locally produced XML schema.
 
-For our *Epigrams* example digital object, we could have used `<sourceMD>` to link to the MARC record describing the print version of the book from which the images were derived. As another example, when a digital audio object is created from an open reel tape, we can record important technical metadata about the tape in `<sourceMD>`, within an `<mdWrap>` element, as follows:
-
-## TODO use current version of AES schema
+For our *Epigrams* example digital object, we could have used `<md>` to link to the MARC record describing the print version of the book from which the images were derived. As another example, when a digital audio object is created from an open reel tape, we can record important technical metadata about the tape in a `<md>` element with a `USE="SOURCE"` attribute, within an `<mdWrap>` element, as follows:
 
 ```xml
 <mets:md ID="SMD_MJF_Tape_0010_Side_A" STATUS="Draft, unformatted"
