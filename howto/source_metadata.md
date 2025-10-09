@@ -8,8 +8,6 @@ parent: METS How-Tos
 
 For our *Epigrams* example digital object, we could have used `<md>` to link to the MARC record describing the print version of the book from which the images were derived. As another example, when a digital audio object is created from an open reel tape, we can record important technical metadata about the tape in a `<md>` element with a `USE="SOURCE"` attribute, within an `<mdWrap>` element, as follows:
 
-## TODO use current version of AES schema
-
 ```xml
 <mets:md ID="SMD_MJF_Tape_0010_Side_A" STATUS="Draft, unformatted"
     CREATED="2006-08-28T15:36:53" USE="SOURCE">
