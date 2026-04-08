@@ -12,7 +12,7 @@ For our *Epigrams* example digital object, we could have used `<md>` to link to 
 <mets:md ID="SMD_MJF_Tape_0010_Side_A" STATUS="Draft, unformatted"
     CREATED="2006-08-28T15:36:53" USE="SOURCE">
   <mets:mdWrap MDTYPE="Draft AES-X098-SC-03-06-B, version 2006-05-19"
-      MIMETYPE="audio/x-wave">
+      MIMETYPE="text/xml">
     <mets:xmlData>
       <dataroot xmlns:od="urn:schemas-microsoft-com:officedata"
           generated="2006-08-28T15:36:53">
