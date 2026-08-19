@@ -14,7 +14,7 @@ Meanwhile, the `<structMap>` element can be used to link together the different 
 
 A `<fileGrp>` may contain zero or more `<file>` elements. A `<file>` element may contain `<FLocat>` pointers to one or more external content files via a URI (see [Referencing external files](FLocat.md)) and/or may itself contain the file content as XML or binary data using the `<FContent>` element (see [Embedding file content](FContent.md)).
 
-A nested (hierarchical) arrangement of file groups is not allowed, since complex structures are meant to be described in the structural map section `<structSec>`.
+A nested (hierarchical) arrangement of file groups is not allowed, since complex structures are meant to be described in the structure section `<structSec>`.
 
 ## Example
 
