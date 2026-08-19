@@ -14,4 +14,4 @@ Each major section of METS is covered on a separate page:
 * [METS Header](mets_sections/metsHdr.md)
 * [Metadata section](mets_sections/mdSec.md)
 * [File section - fileSec](mets_sections/fileSec.md)
-* [Structural map section](mets_sections/structSec.md)
+* [Structure section](mets_sections/structSec.md)
