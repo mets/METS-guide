@@ -8,7 +8,7 @@ The `<fptr>` or **file pointer** element represents digital content that manifes
 
 More than one `<fptr>` element can be associated with a `<div>` element.  Typically sibling `<fptr>` elements represent alternative versions, or manifestations, of the same content. For example, a page of a manuscript might be represented by a thumbnail image, a reference image, a master image, and a structured text version of the page content. Each of these versions would be represented by a `<file>` element in the `<fileSec>` The `<div>` element in the `<structMap>` corresponding to this page of the manuscript would therefore have four child `<fptr>` elements, each of which points to one of the alternative versions of the content.  Typically sibling `<fptr>` elements represent alternative versions, or manifestations, of the same content. Additional attributes associated with the `<fptr>` element include ID and CONTENTIDS. Descriptions of all of the attributes associated with the `<fptr>` element appear in the [schema documentation](https://mets.github.io/METS_v2_Docs/mets2_xsd.html#divType_fptr).
 
-##### Example
+## Example
 
 The following METS encoding fragment represents a case where the `<structMap>` as a whole represents a purely physical structure. The root division represents the whole book, and each structural division under this root represents a physical page. Each page division has three associated content files, each of which represents a different image manifestation (TIFF, JPEG, or GIF) of the same content:
 

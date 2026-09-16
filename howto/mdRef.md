@@ -8,7 +8,7 @@ The **metadata reference** element `<mdRef>` is used to provide a pointer to met
 
 NOTE: `<mdRef>` is an empty element. The location of the external metadata must be specified in the LOCREF attribute and can be supplemented by the XPTR attribute, if needed.
 
-##### Metadata reference -- example
+## Metadata reference -- example
 
 The following example demonstrates the use of the `<mdRef>` element.
 

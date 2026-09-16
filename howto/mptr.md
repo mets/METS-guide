@@ -8,7 +8,7 @@ Like the `<fptr>` element, the **METS pointer** `<mptr>` element represents digi
 
 The `<mptr>` element points to an external METS document by means of an LOCREF attribute as described in "[Linking to external resources from METS](locref.md)". This is the same mechanism used for associating `<file>` elements with external content files in the [FLocat element](FLocat.md)
 
-##### Example
+## Example
 
 The example below illustrates the application of the `<mptr>` element to the case of a book issued in two volumes, each of which is represented by a discrete METS document. Using the `<mptr>` element, the METS document below binds the two separate METS documents representing the individual volumes together into a single METS document representing the entire two-volume set.
 

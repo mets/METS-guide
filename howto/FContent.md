@@ -11,7 +11,7 @@ See also:
 * [Embedding XML content in METS](xmlData.md)
 * [Embedding binary data in METS](binData.md)
 
-##### File content -- example
+## File content -- example
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

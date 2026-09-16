@@ -10,7 +10,7 @@ A single `<area>` element would appear as the direct child of a `<fptr>` element
 
 Multiple `<area>` elements would appear as the direct children of a `<par>` element or a `<seq>` element when multiple files or parts of files manifested the digital content represented by an `<fptr>` element; see also "[Presenting content sequentially](seq.md)" and "[Presenting content simultaneously (in parallel)](par.md)".  As described there, the `<par>` and `<seq>` elements are used to group multiple files or parts of files that must be played/displayed in parallel or in sequence to manifest the digital content represented by the parent `<fptr>` element. In these cases, each individual file, or file segment, would be represented by a child `<area>` element. When used as the direct child of an `<fptr>` element, as is described in the paragraph above, the `<area>` element typically points to just an area or segment of an integral file. When used in the context of a `<par>` or `<seq>` element, however, an area element can point either to an integral file or to a segment of a file as necessary.
 
-##### Example
+## Example
 
 The example below demonstrates the use of the `<area>` element to isolate particular areas of the image files that are referenced in the associated FILEID attributes. It shows both uses of the `<area>` element as a direct child of an `<fptr>` element and as a direct child of a `<seq>` element. In the former case, the specified area of the referenced image manifests the parent division by itself. In the latter case, the specified areas of two different images must be displayed in sequence to fully manifest the parent division.
 
